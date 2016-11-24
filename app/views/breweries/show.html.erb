@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @brewery.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @brewery.description %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @brewery.address %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @brewery.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @brewery.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_brewery_path(@brewery) %> |
+<%= link_to 'Back', breweries_path %>
+
+<hr/>
+
+<div id="brewery_map" data-brewery-id="<%=@brewery.id%>">Google Map will appear here...</div>
